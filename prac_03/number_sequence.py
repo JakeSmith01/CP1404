@@ -15,6 +15,7 @@ def main():
 
         else:
             print('Invalid choice')
+            user_choice = input('>>>').upper()
 
     print('Thanks for using the program!')
 
