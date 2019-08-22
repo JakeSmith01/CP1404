@@ -6,7 +6,7 @@ def main():
     password_length = len(user_password)
     while password_length < MIN_LENGTH:
         print('Password is to short')
-        main()
+        get_password()
     asterisk_printer(password_length)
 
 
