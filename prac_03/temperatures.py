@@ -21,3 +21,5 @@ def convert_celsius(celsius_temp):
 def convert_fahrenheit(fahrenheit_temp):
     converted_temp = ((fahrenheit_temp - 32) / (5/9))
     return converted_temp
+
+main()
