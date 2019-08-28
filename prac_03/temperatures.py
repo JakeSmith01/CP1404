@@ -1,26 +1,24 @@
-def main(converted_celsius, converted_fahrenheit):
+def main():
     print('Temperature converter')
     choice = input('Convert from (C)elsius or (F)ahrenheit:').upper()
     if choice == 'C':
-        celsius_temp = int(input('Please enter a temperature in celsius'))
-        convert_celsius(celsius_temp)
-        print('This converts to', converted_celsius, 'Fahrenheit')
+        celsius = int(input('Please enter a temperature in celsius'))
+        fahrenheit = convert_celsius(celsius)
+        print('This converts to', fahrenheit, 'Fahrenheit')
     elif choice == 'F':
-        fahrenheit_temp = int(input('Please enter a temperature in fahrenheit'))
-        convert_fahrenheit(fahrenheit_temp)
-        print('This converts to', converted_fahrenheit, 'Celsius')
+        fahrenheit = int(input('Please enter a temperature in fahrenheit'))
+        celsius = convert_fahrenheit(fahrenheit)
+        print('This converts to', celsius , 'Celsius')
     else:
         print('Invalid Choice')
 
 
-def convert_celsius(celsius_temp):
-    converted_celsius = (celsius_temp * (9/5)) + 32
-    return converted_celsius
+def convert_celsius(celsius):
+    return (celsius * (9/5)) + 32
 
 
-def convert_fahrenheit(fahrenheit_temp):
-    converted_fahrenheit = ((fahrenheit_temp - 32) / (5/9))
-    return converted_fahrenheit
+def convert_fahrenheit(fahrenheit):
+    return (5/9) * (fahrenheit - 32)
 
 
 main()
