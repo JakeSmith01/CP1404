@@ -15,7 +15,7 @@ usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'B
 
 username = input('Please enter your username:')
 
-if username in usernames is True:
+if username in usernames:
     print('Access Granted')
 else:
     print('Access Denied')

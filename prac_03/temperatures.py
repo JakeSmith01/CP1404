@@ -8,18 +8,17 @@ def main():
     elif choice == 'F':
         fahrenheit = int(input('Please enter a temperature in fahrenheit'))
         celsius = convert_fahrenheit(fahrenheit)
-        print('This converts to', celsius , 'Celsius')
+        print('This converts to', celsius, 'Celsius')
     else:
         print('Invalid Choice')
 
 
 def convert_celsius(celsius):
-    return (celsius * (9/5)) + 32
+    return (celsius * (9 / 5)) + 32
 
 
 def convert_fahrenheit(fahrenheit):
-    return (5/9) * (fahrenheit - 32)
+    return (5 / 9) * (fahrenheit - 32)
 
 
 main()
-
