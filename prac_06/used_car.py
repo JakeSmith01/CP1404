@@ -12,6 +12,12 @@ def main():
     print("odo =", my_car.odometer)
     print(my_car)
 
+    my_limo = Car(100)
+    my_limo.add_fuel(20)
+    print('fuel =', my_limo.fuel)
+    my_limo.drive(115)
+    print('odo =', my_limo.odometer)
+
     print("Car {}, {}".format(my_car.fuel, my_car.odometer))
     print("Car {self.fuel}, {self.odometer}".format(self=my_car))
 
