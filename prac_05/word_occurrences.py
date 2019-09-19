@@ -13,4 +13,4 @@ words.sort()
 
 words_length = max((len(word) for word in words))
 for word in words:
-    print('{:{}}:{}'.format(word,words_length, words_in_string[word]))
+    print('{:{}}:{}'.format(word, words_length, words_in_string[word]))
