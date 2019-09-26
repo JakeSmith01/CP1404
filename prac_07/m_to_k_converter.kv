@@ -4,9 +4,9 @@ BoxLayout:
         orientation: 'horizontal'
         TextInput:
             id: input_number
-            text: '0'
+            text: '37'
             font_size: 48
-            multiline: False
+            on_text: app.handle_conversion()
         BoxLayout:
             orientation: 'vertical'
             Button:
@@ -15,11 +15,11 @@ BoxLayout:
             Button:
                 text: 'Down'
                 on_press: app.handle_change(-1)
-    Button:
-        id: convert_number
-        text: 'Convert mi to km'
-        font_size: 48
-        on_press: app.handle_conversion()
+#    Button:
+#        id: convert_number
+#        text: 'Convert mi to km'
+#        font_size: 48
+#        on_press: app.handle_conversion()
     Label:
         id: output_number
         color: (1, 1, 0, 1)
