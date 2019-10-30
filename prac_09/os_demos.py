@@ -59,5 +59,5 @@ def demo_walk():
             new_name = os.path.join(directory_name, get_fixed_filename(filename))
             os.rename(full_name, new_name)
 
-#main()
-demo_walk()
+main()
+#demo_walk()
